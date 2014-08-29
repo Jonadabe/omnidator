@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RDFa Lite 1.1 notation</title>
+		<!-- http://manu.sporny.org/2012/mythical-differences/ -->
+	</head>
+	<body>
+		<div resource="http://example.org/event123" typeof="schema:Event">
+		  <a property="url" href="nba-miami-philidelphia-game3.html">
+		  NBA Eastern Conference First Round Playoff Tickets:
+		  Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)
+		  </a>
+
+		  <time property="startDate" datetime="2011-04-21T20:00">
+		    Thu, 04/21/11
+		    8:00 p.m.
+		  </time>
+
+		  <div property="schema:location" typeof="schema:Place">
+		    <a property="url" href="wells-fargo-center.html">
+		    Wells Fargo Center
+		    </a>
+		    <div property="schema:address" typeof="schema:PostalAddress">
+		      <span property="schema:addressLocality">Philadelphia</span>,
+		      <span property="schema:addressRegion">PA</span>
+		    </div>
+		  </div>
+
+		  <div property="schema:offers" typeof="schema:AggregateOffer">
+		    Priced from: <span property="schema:lowPrice">$35</span>
+		    <span property="schema:offerCount">1,938</span> tickets left
+		  </div>
+		</div>
+		<div resource="http://example.org/event456" typeof="schema:Event">
+			<!-- Some other Event informations -->
+		</div>
+	</body>
+</html>
